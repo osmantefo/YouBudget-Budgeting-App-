@@ -26,7 +26,7 @@ The original repository is private due to course policies.
 - Modules are used in JavaScript files for function reliability.
 - Variables are used in the CSS file for reliability and maintainability.
 
-## Personal Contributions
+### Personal Contributions
 - Designed and implemented core transaction logic for income and expense tracking
 - Developed JavaScript modules to manage table state, validation, and calculations
 - Implemented input validation and user alerts to handle empty submissions and invalid values
