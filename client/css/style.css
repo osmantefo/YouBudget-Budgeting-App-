@@ -1,0 +1,222 @@
+/* Variables */
+:root {
+    --html-background: #f9f8f7;
+    --program-grey: #ddd;
+    --program-blue: #007bff;
+    --program-darkblue: #0056b3;
+    --program-yellow: #ffd302;
+}
+
+/* Global styling */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: var(--html-background);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--program-blue);
+    color: white;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--program-darkblue);
+    transition: all 0.3s;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid var(--program-grey);
+    padding: 20px 100px;
+    margin: 0;
+}
+
+
+header .program-title {
+    color: var(--program-blue);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.program-title span {
+    color: var(--program-yellow);
+}
+
+header .learn-more-link button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 24px;
+}
+
+/* Main styling */
+main {
+    flex-grow: 1;
+    padding: 50px 100px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+/* Title and heading styling */
+main .program-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.program-heading {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.program-heading span {
+    color: var(--program-yellow);
+    text-decoration: underline;
+}
+
+/* Tables styling */
+.income-table-container,
+.expenses-table-container {
+    margin-bottom: 20px;
+}
+
+.tables-container h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 80%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+table, th, td {
+    border: 1px solid var(--program-grey);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+td select, input {
+    font-size: 14px;
+    width: 100%;
+    padding: 6px;
+}
+
+#addIncomeRowButton,
+#addExpensesRowButton {
+    width: 100%;
+}
+
+#clearIncomeTableButton,
+#clearExpensesTableButton,
+#submitButton {
+    padding: 12px 24px;
+    margin-bottom: 200px;
+    margin-right: 10px;
+}
+
+#removeRowButton {
+    width: 100%;
+}
+
+#removeRowButton,
+#clearIncomeTableButton,
+#clearExpensesTableButton {
+    background-color: black;
+    color: white;
+}
+
+#removeRowButton:hover,
+#clearIncomeTableButton:hover,
+#clearExpensesTableButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+
+/* Graph styling */
+.graph-container h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.graph-container-summary {
+    background-color: white;
+    border: 1px solid var(--program-grey);
+    padding: 25px;
+}
+
+#statusMessage {
+    margin: 20px 0;
+}
+
+#statusMessage span {
+    color: grey;
+}
+
+#barGraph {
+    width: 100%;
+    border: 1px solid var(--program-grey);
+    padding: 10px;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    background-color: var(--program-blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 80px;
+}
+
+footer .program-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+footer p {
+    color: #002e64;
+    font-weight: 500;
+}
+
+footer p span {
+    color: white;
+}
